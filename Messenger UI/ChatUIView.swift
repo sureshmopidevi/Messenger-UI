@@ -34,15 +34,29 @@ struct ChatUIView: View {
     }
 
     func bottomTextBar(state: Binding<String>) -> some View {
-        return HStack(spacing: 16.0) {
+        return HStack(spacing: 4) {
             Button(action: {
                 print("button pressed")
                    }) {
-                Image(systemName: "camera")
-            }
-            TextField("Enter your first name", text: state)
-                .frame(height: 30)
-        }.padding(8)
+                Image(systemName: "paperclip.circle.fill")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(.gray)
+            }.padding(8)
+            TextField("Write your message", text: state)
+                .foregroundColor(.white)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Button(action: {
+                print("button pressed")
+                   }) {
+                Image(systemName: "arrow.right.circle.fill")
+                    .resizable()
+                    .frame(width: 32, height: 32)
+                    .foregroundColor(Color.init(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+            }.padding(8)
+        }
+        .padding(4)
+        .background(Color(white: 0.97))
     }
 }
 
@@ -76,7 +90,11 @@ struct IncomingMessageView: View {
 
             VStack(alignment: .leading) {
                 HStack(alignment: .top) {
-                    Image("images").resizable().frame(width: 36, height: 36, alignment: .center).clipShape(Circle())
+                    Image("images")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 36, height: 36)
+                        .clipShape(Circle())
                 }
             }
 
@@ -89,7 +107,7 @@ struct IncomingMessageView: View {
                         .font(.system(size: 16))
                         .padding(8)
                         .clipped()
-                    Text("1-03-2020").font(.caption)
+                    Text("10:20 AM").font(.caption)
                         .foregroundColor(Color(white: 0.6))
                         .padding(EdgeInsets(top: 0, leading: 8, bottom: 8, trailing: 8))
                 }.background(Color(white: 0.9))
@@ -113,38 +131,13 @@ struct OutgoingMessageView: View {
                         .font(.system(size: 16))
                         .padding(8)
                         .clipped()
-                    Text("1-03-2020").font(.caption)
+                    Text("12:40 PM").font(.caption)
                         .foregroundColor(Color(white: 0.9))
                         .padding(EdgeInsets(top: 0, leading: 8, bottom: 8, trailing: 8))
                 }
                 .background(Color(#colorLiteral(red: 0.4711452723, green: 0.4828599095, blue: 0.9940789342, alpha: 1)))
                 .cornerRadius(8)
             }
-
-            VStack(alignment: .trailing) {
-                HStack(alignment: .top) {
-                    Image("images-1").resizable().frame(width: 36, height: 36, alignment: .center).clipShape(Circle())
-                }
-            }
-        }
-    }
-}
-
-struct MediaMessageView: View {
-    var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            Image("download")
-                .resizable()
-                // .aspectRatio(contentMode: .aspectFill)
-                .frame(width: 240, height: 240, alignment: .center)
-                .clipped()
-            VStack {
-                Text("1-03-2020")
-                    .font(.system(size: 9))
-                    .foregroundColor(Color(white: 0.6))
-                    .padding(EdgeInsets(top: 4, leading: 2, bottom: 2, trailing: 4))
-                    .background(Color.white).cornerRadius(8)
-            }.padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 4))
         }
     }
 }

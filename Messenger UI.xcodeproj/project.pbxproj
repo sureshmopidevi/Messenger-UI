@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18D918D82473B8AA0045F3E8 /* ChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D918D72473B8AA0045F3E8 /* ChatUIView.swift */; };
+		1878DBDA24752CCD006CFCF2 /* ChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1878DBD924752CCD006CFCF2 /* ChatUIView.swift */; };
 		18F5F94B2472C785005FF265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F94A2472C785005FF265 /* AppDelegate.swift */; };
 		18F5F94D2472C785005FF265 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F94C2472C785005FF265 /* SceneDelegate.swift */; };
 		18F5F94F2472C785005FF265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F5F94E2472C785005FF265 /* ContentView.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18D918D72473B8AA0045F3E8 /* ChatUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIView.swift; sourceTree = "<group>"; };
+		1878DBD924752CCD006CFCF2 /* ChatUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUIView.swift; sourceTree = "<group>"; };
 		18F5F9472472C785005FF265 /* Messenger UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Messenger UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F5F94A2472C785005FF265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F5F94C2472C785005FF265 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 				18F5F94C2472C785005FF265 /* SceneDelegate.swift */,
 				18F5F94E2472C785005FF265 /* ContentView.swift */,
 				18F5F95E2472C9F5005FF265 /* ChatListView.swift */,
-				18D918D72473B8AA0045F3E8 /* ChatUIView.swift */,
+				1878DBD924752CCD006CFCF2 /* ChatUIView.swift */,
 				18F5F9602472CA67005FF265 /* DeveloperProfileView.swift */,
 				18F5F9502472C787005FF265 /* Assets.xcassets */,
 				18F5F9552472C787005FF265 /* LaunchScreen.storyboard */,
@@ -159,7 +159,7 @@
 				18F5F94B2472C785005FF265 /* AppDelegate.swift in Sources */,
 				18F5F94D2472C785005FF265 /* SceneDelegate.swift in Sources */,
 				18F5F9612472CA67005FF265 /* DeveloperProfileView.swift in Sources */,
-				18D918D82473B8AA0045F3E8 /* ChatUIView.swift in Sources */,
+				1878DBDA24752CCD006CFCF2 /* ChatUIView.swift in Sources */,
 				18F5F94F2472C785005FF265 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
