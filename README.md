@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/sureshmopidevi/messenger-ui/badge)](https://www.codefactor.io/repository/github/sureshmopidevi/messenger-ui)
+
 # Messenger-UI
 Messager UI design  using SwiftUI
 
